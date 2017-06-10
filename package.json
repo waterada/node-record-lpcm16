@@ -1,11 +1,18 @@
 {
   "name": "node-record-lpcm16",
   "version": "0.3.0",
-  "description": "",
+  "description": "Record a microphone input stream",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "scripts": {},
+  "dependencies": {
+    "debug": "^2.6.8"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint"
+  },
   "keywords": [
     "sox",
     "audio",

@@ -1,12 +1,12 @@
 'use strict'
 
-var record = require('../')
-var fs = require('fs')
+const recorder = require('../')
+const fs = require('fs')
 
-var file = fs.createWriteStream('test.wav', { encoding: 'binary' })
+const file = fs.createWriteStream('test.wav', { encoding: 'binary' })
 
-record.start({
-  sampleRate: 44100,
-  verbose: true
+recorder.record({
+  sampleRate: 44100
 })
+.stream()
 .pipe(file)
