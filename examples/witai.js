@@ -1,3 +1,5 @@
+'use strict'
+
 const recorder = require('../')
 const request = require('request')
 
