@@ -13,7 +13,6 @@ class Recording {
       thresholdStart: null,
       thresholdEnd: null,
       silence: '1.0',
-      verbose: false,
       recordProgram: 'rec'
     }
 
