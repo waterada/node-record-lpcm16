@@ -37,6 +37,7 @@ exports.start = function (options) {
         '-c', options.channels,   // channels
         '-e', 'signed-integer',   // sample encoding
         '-b', '16',               // precision (bits)
+        '-t', 'raw',              // audio type
         '-',                      // pipe
         // end on silence
         'silence', '1', '0.1', options.thresholdStart || options.threshold + '%',
